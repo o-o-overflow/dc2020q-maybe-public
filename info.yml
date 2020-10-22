@@ -1,0 +1,31 @@
+# Info for the schoreboard
+service_name: "maybe"
+description: "Is the flag in there? Maybe"
+tags:
+  - pwn
+violates_flag_format: false # if this is not "true", the flag is verfied against the flag format
+
+allow_egress: False
+
+flag: "OOO{it_pretty_much_always_means_N_OOO!}" 
+copy_flag_using_build_arg: True 
+type: normal
+concurrent_connections: 32
+
+authors:
+  - balzaroth
+
+public_files:
+  - service/public/maybe
+  - service/public/vault.bf
+
+interactions:
+  - /check1.sh
+  - /exploit1.sh
+
+
+game_network_info:
+    host: default
+    port: guess
+
+healthcheck_tcp: Welcome
