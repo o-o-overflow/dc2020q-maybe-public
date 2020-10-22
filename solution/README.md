@@ -69,7 +69,7 @@ filter itself:
 
 ### A Special Bloom Filter 
 
-You can find the code I used to generate the bloom filter in the [bitfield](service/src/bitfield/) folder.
+You can find the code I used to generate the bloom filter in the [bitfield](../service/src/bitfield/) folder.
 
 The goal of the code in the directory is to create the bloom filter
 used by the program AND to create the exploit (the two things are connected
@@ -177,7 +177,7 @@ Once you have artificially created your shellcode bloom filter,
 you can compute the bits you need to flip by diffing the
 initial state of the filter with the one containing the shellcode:
 
-(all commands are in the [bitfield](service/src/bitfield/) folder)
+(all commands are in the [bitfield](../service/src/bitfield/) folder)
 
 ```
 > python diff.py
